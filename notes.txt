@@ -1,0 +1,86 @@
+
+CREATIVE_POSTURES
+
+
+PAGES
+/pub        publishing 
+/ser        services
+/men        mentorship
+/rec        recording
+/contact    contact
+
+
+REPO STRUCTURE
+assets
+contact
+index.html
+men
+pub
+rec
+ser
+
+
+TO DO 
+1 setup project structure
+1.1 node.js
+1.2 fonts
+2 global logic
+2.1 Javascript 
+
+
+
+
+
+
+
+
+
+
+
+
+BRANCHES
+cp-20250218-draft
+cp-20250218-draft-002
+import-20250218
+main
+template
+
+TESTING
+node index.js
+
+
+
+
+
+
+COMMANDS
+ls -1
+ls -R1
+find . -type f -not -path "./.git/*" -not -path "./node_modules/*" | sed 's|^\./||'
+
+
+for file in $(find public -name "*.html"); do
+  sed -i 's|href="style.css"|href="/assets/css/style.css"|' $file
+  sed -i '/<\/head>/i \    <script src="/assets/js/script.js" defer></script>' $file
+done
+
+
+
+
+
+
+
+
+
+
+
+find . -type f -not -path '*/\.git/*' -not -path '*/node_modules/*'
+find . -type f -not -path '*/\.git/*' -not -path '*/node_modules/*' -not -name .gitignore
+find . -type f -not -path "./.git/*" -not -path "./node_modules/*"
+
+
+tree /F /A | Select-String -NotMatch "node_modules"
+tree /F /A | Select-String -NotMatch "node_modules"
+Get-ChildItem -Recurse -Exclude "node_modules" | Where-Object { $_.FullName -notmatch "\\node_modules\\" } | Select-Object FullName
+find . -type d -name "node_modules" -prune -o -print
+find . -type d -name "node_modules" -prune -o -print | sed 's|^./||'

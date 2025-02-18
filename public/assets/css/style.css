@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    line-height: 1.0;
+    margin: 20px;
+}
+
+nav {
+    font-size: 14px;
+    background: #000;
+    text-align: center;
+    padding: 10px;
+  }
+  nav a {
+    color: #fff;
+    margin: 0px;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: #0077cc;
+  }
+  
+
+h2 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 0px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+strong {
+    font-weight: bold;
+}
